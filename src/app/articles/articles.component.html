@@ -1,0 +1,22 @@
+<div class="container">
+    <!-- Inputs for offset and limit -->
+    <div class="inputs">
+      <input type="number" [(ngModel)]="offset" placeholder="Offset" />
+      <input type="number" [(ngModel)]="limit" placeholder="Limit" />
+    </div>
+  
+    <!-- Buttons to clear and load articles -->
+    <div class="buttons">
+      <button (click)="clearArticles()">Clear all articles</button>
+      <button (click)="loadArticles()">Load Articles</button>
+    </div>
+  
+    <!-- Articles section -->
+    <div class="articles">
+      <div class="article-card" *ngFor="let article of articles; trackBy: trackById">
+        <h2>{{ article.name | uppercase }}</h2>
+        <p>URL: <a [href]="article.url" target="_blank">{{ article.url }}</a></p>
+      </div>
+    </div>
+  </div>
+  
