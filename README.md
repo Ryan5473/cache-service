@@ -1,3 +1,11 @@
+ ## Overview
+This Cache application  allows you to cache HTTP request responses based on their URL, parameters (such as offset and limit), and body of the response. This approach helps reduce unnecessary requests to the server by reusing previously fetched data if the same request is made again within a certain period.
+
+The data is stored in memory and can be quickly accessed if the same request is sent again, improving performance and reducing load on the server. Additionally, cached data has an expiration time (TTL) to ensure that outdated data is cleared automatically.
+
+
+
+
 # Angularcachetest
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
@@ -57,3 +65,6 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Cache Service - Caching Data with Expiry
+
